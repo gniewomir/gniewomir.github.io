@@ -3,10 +3,7 @@
 * Convince Parcel to bundle arbitrary static files
 * Link generated pdf version in website version
 * Finish adding abbr tags
-* Add favicon
-* Add meta
 * Put in Git/GitHub
-* Automate deployment to either my DO or github.io
 * Automate pdf rendering in Chromium based tool as wkhtmltopdf/webkit seems to produce subpar results
 * Put it in the deployment pipeline
 * Maybe turn it into a full-fledged dev cv creator?
