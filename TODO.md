@@ -3,9 +3,8 @@
 * Convince Parcel to bundle arbitrary static files
 * Link generated pdf version in website version
 * Finish adding abbr tags
-* Put in Git/GitHub
 * Automate pdf rendering in Chromium based tool as wkhtmltopdf/webkit seems to produce subpar results
-* Put it in the deployment pipeline
+* Customize a build process and the served directory
 * Maybe turn it into a full-fledged dev cv creator?
   * explainer about my line of thinking when it comes to cv structure and content
   * explainer why photos, age, sex/gender etc. should be avoided in cv for principal reasons
