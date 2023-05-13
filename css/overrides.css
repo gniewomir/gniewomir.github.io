@@ -23,6 +23,44 @@ article > footer > p {
 article > header span {
   font-size: 60%;
   color: var(--muted-color);
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  article > header span {
+    display: inline;
+  }
+
+  article > footer ul {
+    display: flex;
+  }
+
+  article > footer {
+    justify-content: space-between;
+  }
+  article > footer ol,
+  article > footer ul {
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+  article > footer ol:first-of-type,
+  article > footer ul:first-of-type {
+    margin-left: calc(var(--nav-element-spacing-horizontal) * -1);
+  }
+  article > footer ol:last-of-type,
+  article > footer ul:last-of-type {
+    margin-right: calc(var(--nav-element-spacing-horizontal) * -1);
+  }
+  article > footer li {
+    display: inline-block;
+    margin: 0;
+    padding: var(--nav-element-spacing-vertical) var(--nav-element-spacing-horizontal);
+  }
+  article > footer li > * {
+    --spacing: 0;
+  }
 }
 
 @media print {
