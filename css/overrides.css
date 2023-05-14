@@ -26,7 +26,7 @@ article > header span {
   display: block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px), print {
   article > header span {
     display: inline;
   }
@@ -109,4 +109,5 @@ article > header span {
   .hide-in-print {
     display: none!important;
   }
+
 }
