@@ -1,10 +1,10 @@
 # Roadmap
 
-* Convince Parcel to bundle arbitrary static files
-* Link generated pdf version in website version
+* Customize a build process and the served directory
 * Finish adding abbr tags
 * Automate pdf rendering in Chromium based tool as wkhtmltopdf/webkit seems to produce subpar results
-* Customize a build process and the served directory
+* Ensure LinkedIn, Twitter, FB etc. can fetch correct page metadata
+* Allow publishing articles, maybe change it to Jekyll theme?
 * Maybe turn it into a full-fledged dev cv creator?
   * explainer about my line of thinking when it comes to cv structure and content
   * explainer why photos, age, sex/gender etc. should be avoided in cv for principal reasons
