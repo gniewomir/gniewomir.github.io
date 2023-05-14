@@ -1,0 +1,13 @@
+name: Build and deploy
+run-name: ${{ github.actor }} is deploying CV
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: npm run build
+      - run: ls -la 
+      - run: ls -la dist
+      - run: exit 1
