@@ -12,6 +12,6 @@ jobs:
       - name: Build website
         run: npm run build
       - name: Create artifact
-        uses: upload-pages-artifact
+        uses: actions/upload-pages-artifact@v1.0.8
         with:
           path: dist
