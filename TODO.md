@@ -1,7 +1,6 @@
 # Roadmap
 
-* Customize a build process and the served directory
-* Put it under custom domain?
+* Attach custom domain when dns changes propagate
 * Finish adding abbr tags
 * Automate pdf rendering in Chromium based tool as wkhtmltopdf/webkit seems to produce subpar results
 * Ensure LinkedIn, Twitter, FB etc. can fetch correct page metadata
