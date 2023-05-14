@@ -1,6 +1,6 @@
 a,
 a:visited {
-  text-decoration: underline!important;
+  text-decoration: underline;
 }
 
 abbr {
@@ -24,6 +24,18 @@ article > header span {
   font-size: 60%;
   color: var(--muted-color);
   display: block;
+}
+
+@media screen {
+  .show-in-print {
+    display: none!important;
+  }
+}
+
+@media print {
+  .hide-in-print {
+    display: none!important;
+  }
 }
 
 @media (min-width: 1200px), print {
@@ -105,9 +117,4 @@ article > header span {
     text-align: center;
     padding-top: calc(var(--block-spacing-vertical) / 2);
   }
-
-  .hide-in-print {
-    display: none!important;
-  }
-
 }
