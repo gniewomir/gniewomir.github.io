@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - run: npm ci
       - run: npm run build
-      - run: ls -la 
+      - run: ls -la
       - run: ls -la dist
       - run: exit 1
