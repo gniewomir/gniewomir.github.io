@@ -2,7 +2,9 @@
   "name": "gniewomir-cv",
   "version": "0.0.1",
   "description": "",
-  "keywords": ["CV"],
+  "keywords": [
+    "CV"
+  ],
   "license": "",
   "author": "Gniewomir Świechowski <gniewomir.swiechowski@gmail.com>",
   "scripts": {
@@ -13,7 +15,8 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "parcel-reporter-static-files-copy": "^1.5.0"
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "@picocss/pico": "^1.5.10"
