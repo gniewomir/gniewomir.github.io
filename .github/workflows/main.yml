@@ -32,9 +32,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: dist
-      - name: Deploy artifact to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
   deploy:
     environment:
       name: github-pages
