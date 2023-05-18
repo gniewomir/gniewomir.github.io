@@ -1,6 +1,10 @@
 # Roadmap
 
 * Attach custom domain when dns changes propagate
+* Make clear what qualities I prioritized in past projects, and why, and what I'm interested in the future.
+* Hammer the point of learning by doing.
+* Describe responsibilities per position?
+* Add tech summary for lazy HR
 * Finish adding abbr tags
 * Automate pdf rendering in Chromium based tool as wkhtmltopdf/webkit seems to produce subpar results
 * Ensure LinkedIn, Twitter, FB etc. can fetch correct page metadata
