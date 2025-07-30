@@ -8,12 +8,15 @@
   "license": "",
   "author": "Gniewomir Świechowski <gniewomir.swiechowski@gmail.com>",
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
+    "prebuild": "parcel build index.html",
+    "build": "./pdf.sh",
+    "postbuild": "parcel build index.html",
+    "dev": "parcel index.html",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "parcel-bundler": "^1.12.4",
     "parcel-reporter-static-files-copy": "^1.5.0",
     "typescript": "^5.0.4"
