@@ -5,7 +5,7 @@ set -e
 PORT=3000
 FILE="static/gniewomir-swiechowski-cv-latest.pdf"
 
-echo "[PDF] Starting dev server..."
+echo "[PDF] Starting server..."
 node ./node_modules/http-server/bin/http-server ./dist -p $PORT 1>/dev/null &
 SERVER_PID=$!
 
