@@ -24,15 +24,3 @@
 }());
 
 // Place any jQuery/helper plugins in here.
-
-// Add the simplest possible cache busting to PDF download, bc I do not want to deal with Parcel namer plugins atm
-document.onreadystatechange = function(_e)
-{
-  // we do not have to wait for DOMLoaded - we need only parsed HTML
-  if (document.readyState === 'complete')
-  {
-    const linkElement = document.getElementById('pdf-download');
-    const originalHref = linkElement.getAttribute('href');
-    linkElement.setAttribute('href', `${originalHref}?_=${new Date().getTime()}`);
-  }
-};
