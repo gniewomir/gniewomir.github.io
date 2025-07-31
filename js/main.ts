@@ -9,7 +9,7 @@ document.onreadystatechange = function (_e) {
 };
 
 /**
- * Prompt:
+ * Prompt for Gemini 2.5 Pro:
  *
  * I need a script to insert to my website, which:
  *
@@ -19,6 +19,8 @@ document.onreadystatechange = function (_e) {
  *   * Pressing escape key makes all html elements not editable, that are descendants of the main html element & containing inner text
  * * If the current host is localhost adds a button in the top left cornet with the label "copy html"
  *   * Clicking this button copies html of main html element
+ *
+ * Adapted.
  */
 document.addEventListener('DOMContentLoaded', () => {
   // Only run this script on the local development server
@@ -50,15 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Function to enable editing mode ---
   const enableEditing = () => {
-    if (!mainElement) {
-      alert('Error: Could not find the <main> HTML element.');
-      return;
-    }
     const elements = getEditableElements();
-    if (elements.length === 0) {
-      alert('No text elements found within <main> to make editable.');
-      return;
-    }
 
     elements.forEach(el => {
       el.contentEditable = 'true';
@@ -105,10 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyButton = document.createElement('button');
   copyButton.textContent = '📄 Copy HTML';
   copyButton.addEventListener('click', () => {
-    if (!mainElement) {
-      alert('Error: Could not find the <main> HTML element.');
-      return;
-    }
     disableEditing();
     navigator.clipboard.writeText(mainElement.innerHTML)
       .then(() => {
