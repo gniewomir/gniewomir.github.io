@@ -4,7 +4,8 @@ document.onreadystatechange = function (_e) {
   if (document.readyState === 'complete') {
     const linkElement = document.getElementById('pdf-download');
     const originalHref = linkElement.getAttribute('href');
-    linkElement.setAttribute('href', `${originalHref}?_=${new Date().getTime()}`);
+    const cleanHref = originalHref.split("?")[0];
+    linkElement.setAttribute('href', `${cleanHref}?_=${new Date().getTime()}`);
   }
 };
 
