@@ -57,7 +57,7 @@
           <li><a href="https://www.quora.com/profile/Gniewomir-%C5%9Awiechowski/answers">Quora answers</a></li>
         </ul>
       </section>
-      <section id="expectations">
+      <section>
         <h1>Executive Summary</h1>
         <ul>
           <li>Backend/Full stack engineer</li>
@@ -80,7 +80,7 @@
     </section>
   </header>
   <section>
-    <h1>Who am I as a professional</h1>
+    <h3>Who am I as a professional</h3>
     <ul>
       <li>I believe that <a href="https://arxiv.org/pdf/2203.04374.pdf" title="Code Red: The Business Impact of Code Quality – A Quantitative Study of 39 Proprietary Production Codebases">development speed is a
         function of quality</a> in any non-trivial code-base
@@ -126,7 +126,7 @@
     </ul>
   </section>
   <section>
-    <h1>Who am I as a person</h1>
+    <h3>Who am I as a person</h3>
     <ul>
       <li>I believe in Paul Saffo <a href="https://halfbanana.medium.com/strong-opinions-weakly-held-a-paradox-unpacked-6201fffe797e">"Strong Opinions, Weakly Held."</a> mental framework</li>
       <li>I assumed the role of informal <strong>tech</strong>
@@ -144,16 +144,21 @@
     </ul>
   </section>
   <section>
-    <h1>Personal project</h1>
-    <p>OAuth2 Authorization Server. Repository: <a href="https://github.com/gniewomir/nestjs-oauth-authorization-server">nestjs-oauth-authorization-server</a></p>
-    <p>Stack: TypeScript+NestJS, Postgres, Redis (planned for production)</p>
-    <h3>Goals:</h3>
-    <ul>
-      <li>Fully functional, RFC-compliant and production-ready OAuth 2.0 Authorization Server & Client implementing Authorization Code flow with PKCE for public clients - like SPA and mobile apps</li>
-      <li>Get to know better OAuth 2.0 spec with extensions & its gotchas</li>
-      <li>Test if I can align current coding LLMs with rigid architectural constraints</li>
-      <li>To have alternative for vendor lock-in with Clerk, or its competition</li>
-    </ul>
+    <h4>Personal projects</h4>
+    <h4>OAuth2 Authorization Server</h4>
+    <p>
+      <strong>Repository:</strong> <a href="https://github.com/gniewomir/nestjs-oauth-authorization-server">nestjs-oauth-authorization-server</a><br>
+      <strong>Architecture/Stack:</strong> Layered; DDD-like / Node.js; TypeScript; NestJS; Postgres<br>
+      <strong>Stage:</strong> MVP complete, hardening, e2e tests<br>
+      <strong>Goals:</strong> Owned fully functional, RFC-compliant and production-ready OAuth 2.0 Authorization Server & Client implementing Authorization Code flow with PKCE for public clients - like SPA and mobile apps. Intended as core for other personal projects.
+    </p>
+    <h4>IT Job Market Scrapper+ETL wt LLM data enrichment & classification</h4>
+    <p>
+      <strong>Repository:</strong> [private] - available on request, but I do not want to make a working scrapper public<br>
+      <strong>Architecture/Stack:</strong> Chain of ultra-light scripts for data extraction & processing / Node.js; JavaScript; TypeScript; Puppeteer<br>
+      <strong>Stage:</strong> Actively scraping two of four polish IT job boards, normalizing data to common format. Implementing LLM enrichment
+      <strong>Goals: </strong> Making informed decisions
+    </p>
   </section>
   <section id="experience">
     <header>
@@ -163,8 +168,8 @@
       <header>
         <h1>SwingDev/Hippo Insurance <span>NYSE: HIPPO, insurance, USA</span>
         </h1>
-        <h2>Software engineer <span>remote, from 07-2023 to 07-2025</span>
-        </h2>
+        <h3>Software engineer <span>remote, from 07-2023 to 07-2025</span>
+        </h3>
       </header>
       <p>Part of Agent Enablement and Underwriting teams.</p>
       <ul>
@@ -196,8 +201,8 @@
       <header>
         <h1>Speychain ltd <span>startup, marketplace, UK</span>
         </h1>
-        <h2>Software consultant <span>remote, from 06-2023 to 06-2023</span>
-        </h2>
+        <h3>Software consultant <span>remote, from 06-2023 to 06-2023</span>
+        </h3>
       </header>
       <p>Scaffolding of the MVP for a contractee team.</p>
       <ul>
@@ -208,7 +213,7 @@
           testing.
         </li>
       </ul>
-      <p>One-month contract. Haven't extended because of a more permanent proposition.</p>
+      <p>One-month contract. Haven't extended because of a more permanent proposition from SwingDev.</p>
       <footer>
         <ul>
           <li>TypeScript</li>
@@ -227,8 +232,8 @@
       <header>
         <h1>Ownplay Inc. <span>startup, mobile game, USA</span>
         </h1>
-        <h2>Software consultant <span>remote, from 11-2022 to 06-2023</span>
-        </h2>
+        <h3>Software consultant <span>remote, from 11-2022 to 06-2023</span>
+        </h3>
       </header>
       <ul>
         <li>Created backoffice APIs, React-based SPA admin panels, and part of
@@ -241,7 +246,7 @@
         </li>
         <li>Coached junior developers</li>
       </ul>
-      <p>The contract was cut short because the company pivoted. In March 2024 I received an offer to jump back on board.</p>
+      <p>The contract was cut short because the company pivot. In March 2024 I received an offer to jump back on board.</p>
       <footer>
         <ul>
           <li>TypeScript</li>
@@ -260,8 +265,8 @@
       <header>
         <h1>Aterian <span>NASDAQ: ATER, e-commerce/logistic/ML company, USA</span>
         </h1>
-        <h2>Backend developer <span>hybrid, from 11-2020 to 11-2022</span>
-        </h2>
+        <h3>Backend developer <span>hybrid, from 11-2020 to 11-2022</span>
+        </h3>
       </header>
       <p><abbr title="Built from the ground up, without any existing code base or infrastructure.">Greenfield
         project</abbr>, layered architecture, CQRS, DDD, TDD.</p>
@@ -302,8 +307,8 @@
       <header>
         <h1>Dogadamycie sp. z o.o. <span>translation company, PL</span>
         </h1>
-        <h2>Full stack developer <span>remote, from 01-2019 to 10-2020</span>
-        </h2>
+        <h3>Full stack developer <span>remote, from 01-2019 to 10-2020</span>
+        </h3>
       </header>
       <ul>
         <li>Led the process of bringing in-house previously outsourced software
@@ -337,8 +342,8 @@
       <header>
         <h1>Joymile <span>startup, middleman for used cars, PL</span>
         </h1>
-        <h2>Full stack developer <span>onsite, from 04-2018 to 01-2019</span>
-        </h2>
+        <h3>Full stack developer <span>onsite, from 04-2018 to 01-2019</span>
+        </h3>
       </header>
       <ul>
         <li>
@@ -373,12 +378,12 @@
     <article>
       <header>
         <h1>Gremi Media SA <span>publisher of "Rzeczpospolita" and <a href="https://rp.pl">rp.pl</a>, PL</span></h1>
-        <h2>Technical Architect <span>onsite, from 09-2016 to 03-2018</span>
-        </h2>
-        <h2>Team Leader <span>onsite, from 04-2016 to 08-2016</span>
-        </h2>
-        <h2>Senior Web Developer <span>onsite, from 10-2015 to 03-2016</span>
-        </h2>
+        <h3>Technical Architect <span>onsite, from 09-2016 to 03-2018</span>
+        </h3>
+        <h3>Team Leader <span>onsite, from 04-2016 to 08-2016</span>
+        </h3>
+        <h3>Senior Web Developer <span>onsite, from 10-2015 to 03-2016</span>
+        </h3>
       </header>
       <h3>Business impact</h3>
       <ul>
@@ -442,8 +447,8 @@
       <header>
         <h1>Uwazaj.pl <span>startup, a middleman between lawyers and customers, PL</span>
         </h1>
-        <h2>Full stack developer <span>remote, from 05-2015 to 05-2017</span>
-        </h2>
+        <h3>Full stack developer <span>remote, from 05-2015 to 05-2017</span>
+        </h3>
       </header>
       <ul>
         <li>Took over after the software house failed to deliver both in
@@ -480,10 +485,10 @@
       <header>
         <h1>Idium AS/Idium Kraków Sp. z o.o <span>website-as-service company, NO/PL</span>
         </h1>
-        <h2>Junior PHP Developer <span>onsite, from 05-2014 to 01-2015</span>
-        </h2>
-        <h2>Senior WordPress Consultant <span>onsite, from 01-2014 to 04-2014</span>
-        </h2>
+        <h3>Junior PHP Developer <span>onsite, from 05-2014 to 01-2015</span>
+        </h3>
+        <h3>Senior WordPress Consultant <span>onsite, from 01-2014 to 04-2014</span>
+        </h3>
       </header>
       <ul>
         <li>As a team, we built and maintained a framework allowing for
@@ -509,8 +514,8 @@
     <article>
       <header>
         <h1>Assorted freelance contracts</h1>
-        <h2>Web developer <span>remote, from 01-2011 to 06-2015</span>
-        </h2>
+        <h3>Web developer <span>remote, from 01-2011 to 06-2015</span>
+        </h3>
       </header>
       <p>Building, adding features, and maintaining various websites,
         WordPress plugins, and themes.</p>
@@ -530,8 +535,8 @@
     <article>
       <header>
         <h1>Internet media</h1>
-        <h2>Journalist, editor, and blogger <span>remote, from 10-2007 to 06-2012</span>
-        </h2>
+        <h3>Journalist, editor, and blogger <span>remote, from 10-2007 to 06-2012</span>
+        </h3>
       </header>
               <p>Writing for multiple internet media entities, including o2 sp. z
           o.o. <em>(currently: Grupa Wirtualna
