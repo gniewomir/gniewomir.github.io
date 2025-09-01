@@ -79,6 +79,24 @@ article > header span {
   }
 }
 
+#experience-summary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  header {
+    flex-basis: 100%;
+  }
+
+  footer {
+    flex-basis: 100%;
+  }
+
+  section {
+    flex: 1 1 300px;
+  }
+}
+
 @media print {
   @page {
     margin: 8mm 8mm !important;
@@ -122,7 +140,7 @@ article > header span {
 
   section article::after {
     content: "***";
-    font-size: 24pt;
+    font-size: 20pt;
     display: block;
     text-align: center;
     padding-top: calc(var(--block-spacing-vertical));
