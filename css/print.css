@@ -79,4 +79,8 @@
   h3 {
     page-break-after: avoid;
   }
+
+  main > header {
+    page-break-after: always;
+  }
 }

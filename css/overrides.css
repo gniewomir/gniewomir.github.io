@@ -106,6 +106,10 @@ article > header span {
   main {
     max-width: none!important;
     padding: 0 5mm !important;
+
+    > header {
+      page-break-after: always;
+    }
   }
 
   a[href]:after {
