@@ -7,15 +7,24 @@ abbr {
   border-bottom: 1px dotted var(--primary);
 }
 
-article > header > h1 {
-  margin-bottom: 0;
+/* Utility classes to preserve heading sizes after semantic refactor (PicoCSS uses CSS vars). */
+.as-h1 {
+  --font-size: 2rem;
+  --typography-spacing-vertical: 3rem;
+  --color: var(--h1-color);
 }
 
-article > header > h2 {
-  margin-bottom: 0;
+.as-h3 {
+  --font-size: 1.5rem;
+  --typography-spacing-vertical: 2.25rem;
+  --color: var(--h3-color);
 }
 
-article > header > h3 {
+article > header > h1,
+article > header > h2,
+article > header > h3,
+article > header > h4,
+article > header > h5 {
   margin-bottom: 0;
 }
 
@@ -138,8 +147,19 @@ article > header span {
     font-size: 8pt!important;
   }
 
-  section, article {
+  /*
+   * Keep each contract entry together, but allow large sections (notably
+   * #experience) to flow across pages. Otherwise headings can get orphaned
+   * and create nearly-empty pages in print/PDF.
+   */
+  article {
+    break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  #experience > header {
+    break-after: avoid-page;
+    page-break-after: avoid;
   }
 
   section article::after {
